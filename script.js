@@ -7,7 +7,7 @@ draggable.forEach((draggable) => {
   draggable.addEventListener("mousedown", (event) => {
     event.preventDefault();
     activeElement = draggable;
-    offsetX = event.clientX - draggable.offsetLeft; 
+    offsetX = event.clientX - draggable.offsetLeft;
     offsetY = event.clientY - draggable.offsetTop;
   });
 });
@@ -35,5 +35,3 @@ if (poem && img) {
     }
   });
 }
-
-

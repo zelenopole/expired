@@ -13,13 +13,6 @@ body {
 }
 
 @font-face {
-  font-family: "icons";
-  src: url("fonts/Calendar-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: "title";
   src: url("fonts/Blackadder\ ITC\ Std\ Regular.otf") format("opentype");
   font-weight: normal;
@@ -48,7 +41,6 @@ body {
   flex-shrink: 0;
   isolation: isolate;
   background-color: #ededed;
-  
 }
 
 .background-image::before {
@@ -62,7 +54,7 @@ body {
   inset: 0;
   background-blend-mode: color-burn;
   background-color: #ededed;
-  opacity: var(--img-opacity, 0); 
+  opacity: var(--img-opacity, 0);
   transition: opacity 0.1s ease-out;
 }
 
