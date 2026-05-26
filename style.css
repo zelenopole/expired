@@ -1,0 +1,180 @@
+html,
+body {
+  background-image: url("image/me.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: exclusion;
+  background-color: #ededed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("fonts/Calendar-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "title";
+  src: url("fonts/Blackadder\ ITC\ Std\ Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 75px 30px 60px;
+  box-sizing: border-box;
+  gap: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  font-size: 205px;
+  color: #000038;
+  font-family: "title";
+}
+.title {
+  width: 664px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.expired {
+  height: 182px;
+  width: 664px;
+  position: relative;
+  line-height: 84%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.menu {
+  width: 664px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 140px;
+  flex-shrink: 0;
+  font-size: 24px;
+  font-family: "DM Mono";
+}
+.joe {
+  width: 90px;
+  position: relative;
+  line-height: 84%;
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.brad {
+  width: 91px;
+  position: relative;
+  line-height: 84%;
+  font-weight: 500;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.icons {
+  width: 570px;
+  height: 442px;
+  position: absolute;
+  top: 47vh;
+  text-align: left;
+  font-size: 40px;
+  color: #000038;
+  font-family: "icons";
+}
+.heart1 {
+  top: 258px;
+  left: 118px;
+  color: #2affca;
+}
+.seastar2 {
+  top: 59px;
+  left: 61px;
+  color: #ffff00;
+}
+.seastar1 {
+  top: 71px;
+  left: 393px;
+  color: #ff7f2a;
+}
+.star2 {
+  top: 294px;
+  left: 97px;
+  color: #ffff00;
+}
+.star1 {
+  top: 15px;
+  left: 438px;
+  color: #0012d4;
+}
+.cross1 {
+  top: 199px;
+  left: 439px;
+  color: #e839ff;
+}
+.flower3 {
+  top: 30px;
+  left: 525px;
+  color: #a6ff00;
+}
+.flower2 {
+  top: 85px;
+  left: 438px;
+  color: #2affca;
+}
+.flower1 {
+  top: 170px;
+  left: 50px;
+  color: #a053ff;
+}
+.circle2 {
+  top: 282px;
+  left: 376px;
+  color: #ff7f2a;
+}
+.circle1 {
+  top: 119px;
+  left: 79px;
+  color: #a6ff00;
+}
+.heart2 {
+  top: 48px;
+  left: 122px;
+  color: #0012d4;
+}
+
+.draggable {
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.1s ease; /* Makes the hover effect smooth */
+}
+
+/* a user hovers over it */
+a:hover {
+  color: #ffffff; /* changes colour when hovered */
+}

@@ -1,0 +1,77 @@
+html,
+body {
+  background-image: url("image/brad.png");
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position: left;
+  background-blend-mode: color-burn;
+  background-color: #ededed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("fonts/Calendar-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "title";
+  src: url("fonts/Blackadder\ ITC\ Std\ Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.page4 {
+  	width: 100%;
+  	height: 902px;
+  	position: relative;
+  	overflow: hidden;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	justify-content: center;
+  	padding: 40px;
+  	box-sizing: border-box;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: top;
+  	text-align: center;
+  	font-size: 150px;
+  	color: #000038;
+  	font-family: 'Blackadder ITC';
+}
+
+.title {
+  	align-self: stretch;
+  	height: 130px;
+  	position: relative;
+  	flex-shrink: 0;
+}
+.expired {
+  	position: absolute;
+  	top: 14px;
+  	left: -75px;
+  	line-height: 84%;
+  	display: inline-block;
+  	width: 680px;
+  	height: 125px;
+  	flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.1s ease; /* Makes the hover effect smooth */
+}
+
+/* a user hovers over it */
+a:hover {
+  color: #ffff00; /* changes colour when hovered */
+}
+
+

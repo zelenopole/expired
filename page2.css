@@ -1,0 +1,121 @@
+html,
+body {
+  background-image: url("image/joe2.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left;
+  background-blend-mode: color-burn;
+  background-color: #ededed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("fonts/Calendar-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "title";
+  src: url("fonts/Blackadder\ ITC\ Std\ Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.page2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  font-size: 205px;
+  color: #000038;
+  font-family: "title";
+}
+
+.background-image {
+  background-image: url("image/joe.png");
+  background-position: center;
+  background-blend-mode: color-burn;
+  background-repeat: no-repeat;
+  width: 1550px;
+  object-fit: cover;
+  flex-shrink: 0;
+  isolation: isolate;
+  background-color: #ededed;
+  
+}
+
+.background-image::before {
+  content: "";
+
+  background-image: url("image/joe.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-blend-mode: color-burn;
+  background-color: #ededed;
+  opacity: var(--img-opacity, 0); 
+  transition: opacity 0.1s ease-out;
+}
+
+.title {
+  position: absolute;
+  top: 170px;
+  left: 350px;
+  width: 564px;
+  height: 172px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 32px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.expired {
+  align-self: stretch;
+  position: relative;
+  line-height: 84%;
+}
+.poem {
+  position: absolute;
+  top: 0px;
+  left: 1190px;
+  width: 300px;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 24px;
+  color: #000;
+  font-family: "DM Mono";
+  overflow: scroll;
+}
+.fantastically-met-left {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  white-space: pre-wrap;
+  display: inline-block;
+  width: 292px;
+  height: 780px;
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.1s ease; /* Makes the hover effect smooth */
+}
+
+/* a user hovers over it */
+a:hover {
+  color: #ffff00; /* changes colour when hovered */
+}
